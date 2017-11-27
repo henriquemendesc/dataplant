@@ -1,0 +1,170 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:9:1-62:12
+	package
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:10:5-32
+		INJECTED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml
+		INJECTED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml
+		INJECTED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:9:11-69
+	android:versionCode
+		INJECTED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml
+		INJECTED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:12:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:13:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:14:22-77
+uses-feature#android.hardware.camera
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:16:5-18:35
+	android:required
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:18:9-32
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:17:9-47
+application
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:20:5-60:19
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Bob\.android\build-cache\b8f32f207e19099beacc4d7f304e02543a4899e4\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\Bob\.android\build-cache\117d1b99bcce0f9b18ef470b2d3fe6439c8cc697\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Bob\.android\build-cache\d13cdc599c5146d49b81a30a76e95322a117e3c9\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Bob\.android\build-cache\92dfd06f2a4214283799ac6c48c5ce5c474ddb36\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Bob\.android\build-cache\5ae4524b8456e621cf8a44465b85f0807f356746\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Bob\.android\build-cache\f6d73d358433651e0dd4970af443926a819a80f6\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Bob\.android\build-cache\b5b5a1b1e7eb645335fda7b074381d8e8a78b888\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Bob\.android\build-cache\82dd9c652b346a87a9168a247e697d655dedcd28\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Bob\.android\build-cache\535a149498f6b5767eb8a81dbeee5bbdf6f66d89\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Bob\.android\build-cache\5aaa7e222985523b5f3ccaa24a3e0da87260052d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Bob\.android\build-cache\bdc04b349ae5a4e0f9d26043044c20ceb5881906\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Bob\.android\build-cache\75ef9e4f8034d0fcb799f5ca6f731d28a7ab7217\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Bob\.android\build-cache\5535b25db6023210d22f5c0065a66989b67b6d15\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:24:9-41
+	android:allowBackup
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:22:9-35
+	android:icon
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:23:9-44
+	android:theme
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:25:9-40
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:21:9-43
+meta-data#com.parse.APPLICATION_ID
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:26:9-28:52
+	android:value
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:28:13-49
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:27:13-52
+meta-data#com.parse.CLIENT_KEY
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:29:9-31:56
+	android:value
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:31:13-53
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:30:13-48
+activity#com.parse.starter.activity.LoginActivity
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:33:9-41:20
+	android:label
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:35:13-45
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:34:13-51
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:36:13-40:29
+action#android.intent.action.MAIN
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:37:17-69
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:37:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:39:17-77
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:39:27-74
+activity#com.parse.starter.activity.MainActivity
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:42:9-44:59
+	android:windowSoftInputMode
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:44:13-56
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:43:13-50
+activity#com.parse.starter.activity.CadastroActivity
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:45:9-63
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:45:19-60
+activity#com.parse.starter.activity.FeedUsuariosActivity
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:46:9-54:20
+	android:label
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:48:13-65
+	android:parentActivityName
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:49:13-64
+	android:theme
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:50:13-44
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:47:13-58
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:51:13-53:75
+	android:value
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:53:17-72
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:52:17-63
+activity#com.parse.starter.activity.PhotoActivity
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:55:9-60
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:55:19-57
+activity#com.parse.starter.activity.DeletePostsActivity
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:56:9-66
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:56:19-63
+activity#com.parse.starter.activity.FloatingActivity
+ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:57:9-59:65
+	android:theme
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:59:13-53
+	android:name
+		ADDED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml:58:13-54
+uses-sdk
+INJECTED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Bob\.android\build-cache\b8f32f207e19099beacc4d7f304e02543a4899e4\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:25.3.1] C:\Users\Bob\.android\build-cache\117d1b99bcce0f9b18ef470b2d3fe6439c8cc697\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Bob\.android\build-cache\d13cdc599c5146d49b81a30a76e95322a117e3c9\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Bob\.android\build-cache\92dfd06f2a4214283799ac6c48c5ce5c474ddb36\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Bob\.android\build-cache\5ae4524b8456e621cf8a44465b85f0807f356746\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Bob\.android\build-cache\45668051d02a4f6c601c7011c5a01b096bc75423\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Bob\.android\build-cache\f6d73d358433651e0dd4970af443926a819a80f6\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Bob\.android\build-cache\b5b5a1b1e7eb645335fda7b074381d8e8a78b888\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.databinding:adapters:1.3.1] C:\Users\Bob\.android\build-cache\3a6a5e494481095f8ce1a4f4a0b8ce189877fbab\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:library:1.3.1] C:\Users\Bob\.android\build-cache\70b56919037658563525fe5956545b7df7b96530\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Bob\.android\build-cache\82dd9c652b346a87a9168a247e697d655dedcd28\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Bob\.android\build-cache\535a149498f6b5767eb8a81dbeee5bbdf6f66d89\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Bob\.android\build-cache\5aaa7e222985523b5f3ccaa24a3e0da87260052d\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Bob\.android\build-cache\bdc04b349ae5a4e0f9d26043044c20ceb5881906\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Bob\.android\build-cache\75ef9e4f8034d0fcb799f5ca6f731d28a7ab7217\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Bob\.android\build-cache\5535b25db6023210d22f5c0065a66989b67b6d15\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Bob\.android\build-cache\117d1b99bcce0f9b18ef470b2d3fe6439c8cc697\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml
+		INJECTED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml
+		INJECTED from C:\Plant\projeto.0.3\ParseStarterProject\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\Bob\.android\build-cache\b8f32f207e19099beacc4d7f304e02543a4899e4\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:design:25.3.1] C:\Users\Bob\.android\build-cache\117d1b99bcce0f9b18ef470b2d3fe6439c8cc697\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Bob\.android\build-cache\d13cdc599c5146d49b81a30a76e95322a117e3c9\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Bob\.android\build-cache\92dfd06f2a4214283799ac6c48c5ce5c474ddb36\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Bob\.android\build-cache\5ae4524b8456e621cf8a44465b85f0807f356746\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Bob\.android\build-cache\45668051d02a4f6c601c7011c5a01b096bc75423\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Bob\.android\build-cache\f6d73d358433651e0dd4970af443926a819a80f6\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Bob\.android\build-cache\82dd9c652b346a87a9168a247e697d655dedcd28\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Bob\.android\build-cache\535a149498f6b5767eb8a81dbeee5bbdf6f66d89\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Bob\.android\build-cache\5aaa7e222985523b5f3ccaa24a3e0da87260052d\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Bob\.android\build-cache\bdc04b349ae5a4e0f9d26043044c20ceb5881906\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Bob\.android\build-cache\75ef9e4f8034d0fcb799f5ca6f731d28a7ab7217\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Bob\.android\build-cache\5535b25db6023210d22f5c0065a66989b67b6d15\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\Bob\.android\build-cache\b8f32f207e19099beacc4d7f304e02543a4899e4\output\AndroidManifest.xml:24:9-31
+	android:name
+		ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\Bob\.android\build-cache\b8f32f207e19099beacc4d7f304e02543a4899e4\output\AndroidManifest.xml:23:9-47

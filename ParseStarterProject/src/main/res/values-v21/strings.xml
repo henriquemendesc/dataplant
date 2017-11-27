@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_message_photo">Escolha o que deseja fazer, cameera para tirar foto ou buscar da galeraia.</string>
+    <string name="dialog_galeria_photo">Galeria</string>
+    <string name="takephoto_dialog_photo">Tirar Foto</string>
+    <string name="desc_photo">Descrição</string>
+    <string name="hint_desc_photo">Digite uma descrição para sua foto</string>
+    <string name="salvar_string">Salvar</string>
+    <string name="descricao_image_adapter">Descrição da imagem</string>
+    <string name="home_without_posts">Ih! Ainda não há nenhuma postagem...</string>
+    <string name="nome">Nome:</string>
+    <string name="desc_catalogo">Descrição:</string>
+    <string name="empty_catalogo">Ih! Não nada ainda no catálogo...</string>
+    <string name="data_plant">DataPlant</string>
+    <string name="loading">Carregando...</string>
+    <string name="nome_photo">Nome</string>
+    <string name="emptyname_photo">Preencha o campo nome</string>
+    <string name="uploadsuccess_photo">Foto postada com sucesso</string>
+    <string name="uploadwarning_photo">Ocorreu algum problema ao postar a foto</string>
+    <string name="usuario_postagem">Usuário:</string>
+    <string name="postagem_descricao">Descrição:</string>
+    <string name="empty_search">Sua busca não retornou resultados...</string>
+    <string name="apagar_postagens">Apagar Postagens</string>
+    <string name="item_click_delete">Clique no item para apagar...</string>
+    <string name="delete_post_title">Apagar Postagem</string>
+    <string name="delete_post_message">Deseja realmente apagar este post?</string>
+    <string name="positive_button">Sim</string>
+    <string name="negative_button">Não</string>
+    <string name="deleted_item">Item deletado com sucesso!</string>
+    <string name="error_to_delete">Houve um problema ao deletar o item</string>
+    <string name="fechar_floating">Fechar</string>
+    <string name="touch_image">Toque na imagem..</string>
+</resources>

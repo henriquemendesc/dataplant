@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_action_home.png",
+        "source": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\src\\main\\res\\drawable-mdpi\\ic_action_home.png"
+    },
+    {
+        "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_people.png",
+        "source": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\src\\main\\res\\drawable-mdpi\\ic_people.png"
+    },
+    {
+        "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_add_white_24px.png",
+        "source": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_add_white_24px.png"
+    },
+    {
+        "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\galeria.png",
+        "source": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\src\\main\\res\\drawable-mdpi\\galeria.png"
+    },
+    {
+        "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_catalog.png",
+        "source": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\src\\main\\res\\drawable-mdpi\\ic_catalog.png"
+    },
+    {
+        "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_action_camera.png",
+        "source": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\src\\main\\res\\drawable-mdpi\\ic_action_camera.png"
+    },
+    {
+        "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_keyboard_arrow_left.png",
+        "source": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\src\\main\\res\\drawable-mdpi\\ic_keyboard_arrow_left.png"
+    },
+    {
+        "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_action_search.png",
+        "source": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
+    },
+    {
+        "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_highlight_off_white_24dp.png",
+        "source": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\src\\main\\res\\drawable-mdpi\\ic_highlight_off_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\camera.png",
+        "source": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\src\\main\\res\\drawable-mdpi\\camera.png"
+    }
+]

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="cinzaEscuro">#5c5c5c</color>
+    <color name="cinza">#F3F3F3</color>
+    <color name="preto">#000000</color>
+    <color name="verdeescuro">#1B5E20</color>
+    <color name="verdeclaro">#2E7D32</color>
+    <color name="lightblack">#757575</color>
+    <color name="colorTranslucentBlack">#4D000000</color>
+
+</resources>
