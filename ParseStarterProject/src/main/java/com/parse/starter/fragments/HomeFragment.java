@@ -1,6 +1,7 @@
 package com.parse.starter.fragments;
 
 
+import android.app.ActivityOptions;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -77,10 +78,11 @@ public class HomeFragment extends Fragment {
 
         Bundle bundle = new Bundle();
         Intent intent = new Intent(getActivity(), FloatingActivity.class);
+        ActivityOptions bundle2 = ActivityOptions.makeCustomAnimation(getContext(),R.anim.fade_in,R.anim.fade_out);
         bundle.putString("image",urlImage);
         bundle.putString("user",userAbout);
         intent.putExtras(bundle);
-        startActivity(intent);
+        startActivity(intent,bundle2.toBundle());
     }
 
     /**
