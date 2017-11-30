@@ -1,50 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="251dp"
+    android:layout_marginBottom="5dp">
 
     <ImageView
         android:id="@+id/image_lista_catalogo"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:padding="8dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/galeria" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/galeria" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/txt_gradient" />
 
     <TextView
         android:id="@+id/txtListaCatalogoNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/image_lista_catalogo"
+        android:layout_gravity="bottom"
         android:layout_marginBottom="7dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="7dp"
         android:layout_marginRight="7dp"
-        android:visibility="visible"
-        android:text="@string/nome"
-        android:textColor="@color/preto"
-        android:textSize="16dp" />
-
-    <TextView
-        android:id="@+id/txtListaCatalogoDesc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtListaCatalogoNome"
-        android:layout_marginBottom="5dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="7dp"
-        android:text="@string/desc_catalogo"
-        android:textColor="@color/preto"
-        android:textSize="16dp" />
+        android:gravity="bottom"
+        android:text="Texto"
+        android:textColor="@color/colorPrimary" />
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:layout_below="@+id/txtListaCatalogoDesc"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_height="0.7dp"
+        android:elevation="6dp"
+        android:layout_gravity="bottom"
         android:background="@color/preto" />
-
-
-</RelativeLayout>
+</FrameLayout>

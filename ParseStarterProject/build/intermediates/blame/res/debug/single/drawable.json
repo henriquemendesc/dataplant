@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
-        "source": "C:\\Users\\Bob\\.android\\build-cache\\d13cdc599c5146d49b81a30a76e95322a117e3c9\\output\\res\\drawable\\abc_ic_search_api_material.xml"
-    },
-    {
         "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\Bob\\.android\\build-cache\\d13cdc599c5146d49b81a30a76e95322a117e3c9\\output\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\Bob\\.android\\build-cache\\d13cdc599c5146d49b81a30a76e95322a117e3c9\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
         "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
@@ -44,12 +44,12 @@
         "source": "C:\\Users\\Bob\\.android\\build-cache\\d13cdc599c5146d49b81a30a76e95322a117e3c9\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\Bob\\.android\\build-cache\\d13cdc599c5146d49b81a30a76e95322a117e3c9\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
         "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
         "source": "C:\\Users\\Bob\\.android\\build-cache\\d13cdc599c5146d49b81a30a76e95322a117e3c9\\output\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Bob\\.android\\build-cache\\d13cdc599c5146d49b81a30a76e95322a117e3c9\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
@@ -190,6 +190,10 @@
     {
         "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
         "source": "C:\\Users\\Bob\\.android\\build-cache\\d13cdc599c5146d49b81a30a76e95322a117e3c9\\output\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable\\txt_gradient.xml",
+        "source": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\src\\main\\res\\drawable\\txt_gradient.xml"
     },
     {
         "merged": "C:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",

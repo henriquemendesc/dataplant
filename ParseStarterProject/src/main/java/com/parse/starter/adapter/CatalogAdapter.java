@@ -47,7 +47,7 @@ public class CatalogAdapter extends ArrayAdapter<ParseObject> {
 
             ImageView imagemCatalogo = (ImageView) view.findViewById(R.id.image_lista_catalogo);
             txtNomeCatalogo = (TextView) view.findViewById(R.id.txtListaCatalogoNome);
-            txtDescCatalogo = (TextView) view.findViewById(R.id.txtListaCatalogoDesc);
+            //txtDescCatalogo = (TextView) view.findViewById(R.id.txtListaCatalogoDesc);
 
             ParseObject parseObject = listCatalogs.get(position);
 
@@ -56,8 +56,8 @@ public class CatalogAdapter extends ArrayAdapter<ParseObject> {
                     .fit()
                     .into(imagemCatalogo);
 
-            txtDescCatalogo.setText(view.getContext().getString(R.string.desc_catalogo)+" "+parseObject.getString("imageabout"));
-            txtNomeCatalogo.setText(view.getContext().getString(R.string.nome)+" "+parseObject.getString("imagename"));
+            txtNomeCatalogo.setText(view.getContext().getString(R.string.nome)+" "+parseObject.getString("imagename") +"\n"+
+                    view.getContext().getString(R.string.desc_catalogo)+" "+parseObject.getString("imageabout"));
 
 
         }

@@ -1,4 +1,4 @@
-#Tue Nov 28 19:04:29 BRST 2017
+#Thu Nov 30 10:57:46 BRST 2017
 base.0=C\:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b2c3c10e63ed843dd27b2682050ccefc19d09f23
 renamed.1=classes2.dex
 renamed.0=classes.dex
