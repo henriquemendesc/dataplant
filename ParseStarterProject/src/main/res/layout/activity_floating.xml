@@ -9,14 +9,14 @@
     android:theme="@style/Theme.Transparent"
     tools:context="com.parse.starter.activity.FloatingActivity">
 
-    <ImageButton
+<!--    <ImageButton
         android:id="@+id/btnFloat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:src="@drawable/ic_highlight_off_white_24dp"
         android:background="@android:color/transparent"
-        android:text="@string/fechar_floating" />
+        android:text="@string/fechar_floating" />-->
 
     <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"

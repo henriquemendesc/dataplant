@@ -85,18 +85,20 @@ public class DeletePostsActivity extends AppCompatActivity {
                             @Override
                             public void done(List<ParseObject> objects, ParseException e) {
                                 if (e == null) {
-                                    if (objects.size() > 0) {
-                                        objects.get(position).deleteInBackground(new DeleteCallback() {
+                                    if (objects !=null && objects.size() > 0) {
+                                        ParseObject toDelete = objects.get(0);//O retorno é sempre na posição ZERO, pois a query é feita pelo Id do ojeto, retornando sempre somente 1.
+                                        toDelete.deleteInBackground(new DeleteCallback() {
                                             @Override
                                             public void done(ParseException e) {
                                                 if (e == null) {
                                                     progress.endProgress(getContext());
                                                     adapter.notifyDataSetChanged();
                                                     Toast.makeText(getContext(), getString(R.string.deleted_item), Toast.LENGTH_SHORT).show();
-                                                    Snackbar.make(parentLayout, getString(R.string.deleted_item), Snackbar.LENGTH_LONG)
-                                                            .setAction("Action", null).show();
+/*                                                    Snackbar.make(parentLayout, getString(R.string.deleted_item), Snackbar.LENGTH_LONG)
+                                                            .setAction("Action", null).show();*/
                                                     adapter.clear();
-                                                    getPostsToDelete();
+                                                    onBackPressed();
+                                                    //getPostsToDelete();
                                                 } else {
                                                     Snackbar.make(parentLayout, getString(R.string.error_to_delete), Snackbar.LENGTH_LONG)
                                                             .setAction("Action", null).show();
@@ -125,7 +127,46 @@ public class DeletePostsActivity extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-        getPostsToDelete();
+        if(SaveSharedPreferences.getUserAdmin(this)){
+            getPostsToDeleteAdmin();
+        }else {
+            getPostsToDelete();
+        }
+    }
+
+    //if user is admin all posts will appear
+    private void getPostsToDeleteAdmin() {
+        progress.startProgress(this);
+
+        query = ParseQuery.getQuery("Imagem");
+        query.whereNotEqualTo("imagecatalog", "sim");
+        query.orderByDescending("createdAt");
+
+        query.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> objects, ParseException e) {
+                progress.endProgress(getContext());
+                if (e == null) {//sucesso
+
+                    if (objects.size() > 0) {
+                        if (txtDelete.getVisibility() == View.VISIBLE) {//retira o texto da tela se houver catálogo
+                            txtDelete.setVisibility(View.GONE);
+                        }
+                        delete.clear();
+                        for (ParseObject parseObject : objects) {
+                            delete.add(parseObject);
+                        }
+                        adapter.notifyDataSetChanged();
+                    } else {
+                        txtDelete.setVisibility(View.VISIBLE);//mostra um texto somente para que a tela não fique em branco
+                    }
+
+                } else {//erro
+                    e.printStackTrace();
+                }
+
+            }
+        });
     }
 
     //catch the posts from user to show

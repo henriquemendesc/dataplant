@@ -148,7 +148,7 @@ public class PhotoActivity extends AppCompatActivity {
                         if(edtName.getVisibility() == View.VISIBLE) {
                             edtName.setText("");
                         }
-
+                        onBackPressed();
                     } else {//erro
                         progress.endProgress(getContext());
                         Snackbar.make(parentLayout, getString(R.string.uploadwarning_photo), Snackbar.LENGTH_LONG)

@@ -34,13 +34,13 @@ public class FloatingActivity extends AppCompatActivity {
 
         imgFloat = (ImageView)findViewById(R.id.image_float);
         user = (TextView)findViewById(R.id.txtFloat);
-        btnFechar = (ImageButton)findViewById(R.id.btnFloat);
-        btnFechar.setOnClickListener(new View.OnClickListener() {
+       // btnFechar = (ImageButton)findViewById(R.id.btnFloat);
+/*        btnFechar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
-        });
+        });*/
 
         imgURL = bundle.getString("image");
         userAbout = bundle.getString("user");

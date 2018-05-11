@@ -1,7 +1,0 @@
-#Thu Nov 30 10:57:46 BRST 2017
-base.0=C\:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b2c3c10e63ed843dd27b2682050ccefc19d09f23
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=C\:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_c3e310919d116421a4df8a8f68b55d26b29ba799\\classes.dex
-base.1=C\:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_c3e310919d116421a4df8a8f68b55d26b29ba799
-file.0=C\:\\Plant\\projeto.0.3\\ParseStarterProject\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_b2c3c10e63ed843dd27b2682050ccefc19d09f23\\classes.dex
