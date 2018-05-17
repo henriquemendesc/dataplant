@@ -47,10 +47,10 @@
     <string name="usuario_postagem">Usuário:</string>
     <string name="postagem_descricao">Descrição:</string>
     <string name="empty_search">Sua busca não retornou resultados...</string>
-    <string name="apagar_postagens">Apagar Postagens</string>
+    <string name="apagar_postagens">Apagar ou Editar postagens</string>
     <string name="item_click_delete">Clique no item para apagar...</string>
-    <string name="delete_post_title">Apagar Postagem</string>
-    <string name="delete_post_message">Deseja realmente apagar este post?</string>
+    <string name="delete_post_title">Editar ou Deletar?</string>
+    <string name="delete_post_message">Você pode editar a <b>descrição</b> ou Apagar o post, o que deseja fazer?</string>
     <string name="positive_button">Sim</string>
     <string name="negative_button">Não</string>
     <string name="deleted_item">Item deletado com sucesso!</string>

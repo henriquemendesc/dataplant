@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,6 +23,7 @@ import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
+import com.parse.SaveCallback;
 import com.parse.starter.R;
 import com.parse.starter.adapter.DeleteAdapter;
 import com.parse.starter.persistence.SaveSharedPreferences;
@@ -75,7 +78,7 @@ public class DeletePostsActivity extends AppCompatActivity {
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
         dialog.setTitle(getString(R.string.delete_post_title))
                 .setMessage(getString(R.string.delete_post_message))
-                .setPositiveButton(getString(R.string.positive_button), new DialogInterface.OnClickListener() {
+                .setPositiveButton("Apagar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         progress.startProgress(getContext());
@@ -85,7 +88,7 @@ public class DeletePostsActivity extends AppCompatActivity {
                             @Override
                             public void done(List<ParseObject> objects, ParseException e) {
                                 if (e == null) {
-                                    if (objects !=null && objects.size() > 0) {
+                                    if (objects != null && objects.size() > 0) {
                                         ParseObject toDelete = objects.get(0);//O retorno é sempre na posição ZERO, pois a query é feita pelo Id do ojeto, retornando sempre somente 1.
                                         toDelete.deleteInBackground(new DeleteCallback() {
                                             @Override
@@ -116,10 +119,11 @@ public class DeletePostsActivity extends AppCompatActivity {
                         });
                     }
                 })
-                .setNegativeButton(getString(R.string.negative_button), new DialogInterface.OnClickListener() {
+                .setNegativeButton("Editar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.dismiss();
+                        editarPostagem(objectId);
                     }
                 }).show();
     }
@@ -127,9 +131,9 @@ public class DeletePostsActivity extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-        if(SaveSharedPreferences.getUserAdmin(this)){
+        if (SaveSharedPreferences.getUserAdmin(this)) {
             getPostsToDeleteAdmin();
-        }else {
+        } else {
             getPostsToDelete();
         }
     }
@@ -207,5 +211,68 @@ public class DeletePostsActivity extends AppCompatActivity {
 
     private Context getContext() {
         return this;
+    }
+
+
+    private void editarPostagem(final String objectId) {
+        final EditText input = new EditText(DeletePostsActivity.this);
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(DeletePostsActivity.this);
+        alertDialog.setTitle("Editar a descrição")
+                .setMessage("Edite a descrição e clique em OK");
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.MATCH_PARENT);
+        input.setLayoutParams(lp);
+        alertDialog.setView(input)
+                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        if (!input.getText().toString().isEmpty() || !input.getText().toString().equals("")) {
+                            editDescPost(objectId, input.getText().toString());
+                        } else {
+                            Toast.makeText(DeletePostsActivity.this, "A descrição está em branco.", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }).setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        }).show();
+
+    }
+
+    private void editDescPost(String objectId, final String s) {
+        try {
+            query.findInBackground(new FindCallback<ParseObject>() {
+                @Override
+                public void done(List<ParseObject> objects, ParseException e) {
+                    if (e == null){
+                        objects.get(0).put("imageabout",s);
+                        objects.get(0).saveInBackground();
+                        Toast.makeText(DeletePostsActivity.this, "Post foi editado com sucesso", Toast.LENGTH_SHORT).show();
+                        onBackPressed();
+                    }else{
+                        Toast.makeText(DeletePostsActivity.this, "Houve algum erro", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+           /* ParseObject parseObject = new ParseObject("Imagem");
+            parseObject.put("imageabout", s);
+            parseObject.put("objectId", objectId);
+            parseObject.saveInBackground(new SaveCallback() {
+                @Override
+                public void done(ParseException e) {
+                    if (e == null) {
+                        Toast.makeText(DeletePostsActivity.this, "Post foi editado com sucesso", Toast.LENGTH_SHORT).show();
+                        onBackPressed();
+                    } else {
+                        Toast.makeText(DeletePostsActivity.this, "Houve algum erro", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });*/
+        } catch (Exception e) {
+
+        }
     }
 }
