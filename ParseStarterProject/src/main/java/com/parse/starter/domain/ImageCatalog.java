@@ -6,7 +6,7 @@ import java.io.Serializable;
  * Created by henrique.carvalho on 10/05/2018.
  */
 
-public class Image implements Serializable{
+public class ImageCatalog implements Serializable{
 
     private static final long serialVersionUID = -4559634123705134293L;
     private String id;
