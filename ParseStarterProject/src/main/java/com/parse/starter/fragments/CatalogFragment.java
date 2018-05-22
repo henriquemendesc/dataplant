@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
@@ -105,17 +106,27 @@ public class CatalogFragment extends Fragment {
         adapter = new CatalogAdapter(getActivity(), catalogo);
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 if(SaveSharedPreferences.getUserAdmin(getActivity())) {
                     ParseObject obj = adapter.getItem(position);
                     editOrDeleteItem(obj.getObjectId(), position);
+                    return true;
+                }else {
+                    return false;
                 }
             }
+
         });
 
         return view;
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        Toast.makeText(getContext(), "Clique longo para apagar ou editar o item", Toast.LENGTH_SHORT).show();
     }
 
     private void editOrDeleteItem(final String objectId, int position) {
