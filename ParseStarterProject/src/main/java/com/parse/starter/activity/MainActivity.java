@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar toolbarPrincipal;
     private SlidingTabLayout slidingTabLayout;
     private ViewPager viewPager;
+    //private GoogleApiClient mGoogleApiClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +81,15 @@ public class MainActivity extends AppCompatActivity {
         slidingTabLayout.setDistributeEvenly(true);
         slidingTabLayout.setSelectedIndicatorColors(ContextCompat.getColor(this, R.color.cinzaEscuro));
         slidingTabLayout.setViewPager(viewPager);
+
+/*        buildGoogleApiClient();
+        if (mGoogleApiClient != null) {
+            if (!mGoogleApiClient.isConnected()) {
+                mGoogleApiClient.connect();
+            }
+        } else {
+            buildGoogleApiClient();
+        }*/
 
     }
 
@@ -138,4 +148,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+/*    protected synchronized void buildGoogleApiClient() {
+        //Toast.makeText(this,"buildGoogleApiClient",Toast.LENGTH_SHORT).show();
+        mGoogleApiClient = new GoogleApiClient.Builder(activity)
+                .addConnectionCallbacks(this)
+                .addOnConnectionFailedListener(this)
+                .addApi(LocationServices.API)
+                .build();
+    }*/
 }
