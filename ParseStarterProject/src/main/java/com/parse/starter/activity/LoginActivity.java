@@ -122,13 +122,18 @@ public class LoginActivity extends AppCompatActivity {
                             SaveSharedPreferences.setUserAdmin(getContext(),false);
                         }
                     }
-
+                   // buscaCidadeServidor();
                 } else {//erro
                     e.printStackTrace();
                 }
 
             }
         });
+    }
+
+    private void buscaCidadeServidor() {
+        //busca cidade para verificar se pode postar foto
+        ParseObject parseObject = new ParseObject("Locations");
     }
 
     private void abrirAreaPrincipal() {

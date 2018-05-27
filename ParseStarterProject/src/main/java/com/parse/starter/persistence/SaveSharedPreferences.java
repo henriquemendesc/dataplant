@@ -15,6 +15,8 @@ public class SaveSharedPreferences {
     public static final String USER_NAME = "username";
     public static final String USER_ADMIN = "useradmin";
     private static final String IS_CATALOG = "is_catalog";
+    private static final String LATITUDE = "latitude";
+    private static final String LONGITUDE = "longitude";
 
     public static void setUserEmail(Context context, String userEmail){
         SharedPreferences.Editor editor =  context.getSharedPreferences(LOGIN_PREFS_NAME, Context.MODE_PRIVATE).edit();
@@ -64,5 +66,24 @@ public class SaveSharedPreferences {
     public static Boolean getIsCatalog(Context context){
         SharedPreferences pref =  context.getSharedPreferences(LOGIN_PREFS_NAME, Context.MODE_PRIVATE);
         return pref.getBoolean(IS_CATALOG, false);
+    }
+
+    public static void setLat(Context context, float lat){
+        SharedPreferences.Editor editor =  context.getSharedPreferences(LOGIN_PREFS_NAME, Context.MODE_PRIVATE).edit();
+        editor.putFloat(LATITUDE,lat);
+        editor.commit();
+    }
+    public static Float getLat(Context context){
+        SharedPreferences pref =  context.getSharedPreferences(LOGIN_PREFS_NAME, Context.MODE_PRIVATE);
+        return pref.getFloat(LATITUDE, 0f);
+    }
+    public static void setLng(Context context, float lat){
+        SharedPreferences.Editor editor =  context.getSharedPreferences(LOGIN_PREFS_NAME, Context.MODE_PRIVATE).edit();
+        editor.putFloat(LONGITUDE,lat);
+        editor.commit();
+    }
+    public static Float getLng(Context context){
+        SharedPreferences pref =  context.getSharedPreferences(LOGIN_PREFS_NAME, Context.MODE_PRIVATE);
+        return pref.getFloat(LONGITUDE, 0f);
     }
 }

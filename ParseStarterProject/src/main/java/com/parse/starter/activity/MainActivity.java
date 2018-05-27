@@ -8,16 +8,22 @@
  */
 package com.parse.starter.activity;
 
+import android.Manifest;
 import android.annotation.TargetApi;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.location.Location;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AlertDialog;
@@ -30,6 +36,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.maps.model.LatLng;
 import com.parse.FindCallback;
 import com.parse.GetCallback;
 import com.parse.LogInCallback;
@@ -44,6 +54,7 @@ import com.parse.SignUpCallback;
 import com.parse.starter.R;
 import com.parse.starter.adapter.TabsAdapter;
 import com.parse.starter.fragments.HomeFragment;
+import com.parse.starter.util.PermissionUtils;
 import com.parse.starter.util.SlidingTabLayout;
 
 import java.io.ByteArrayOutputStream;
@@ -53,12 +64,20 @@ import java.util.Date;
 import java.util.List;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
+    private static final int REQUEST_CODE_PERMISSION_ACCESS_COURSE_LOCATION = 1;
     private Toolbar toolbarPrincipal;
     private SlidingTabLayout slidingTabLayout;
     private ViewPager viewPager;
-    //private GoogleApiClient mGoogleApiClient;
+    private GoogleApiClient mGoogleApiClient;
+    private String[] permissoes;
+    private double latitude;
+    private double longitude;
+    private LatLng localizacao;
+    //constantes para a cidade de pacarembi
+    private static double LAT = -22.6078;
+    private static double LNG = -43.7108;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,14 +101,22 @@ public class MainActivity extends AppCompatActivity {
         slidingTabLayout.setSelectedIndicatorColors(ContextCompat.getColor(this, R.color.cinzaEscuro));
         slidingTabLayout.setViewPager(viewPager);
 
-/*        buildGoogleApiClient();
+        buildGoogleApiClient();
         if (mGoogleApiClient != null) {
             if (!mGoogleApiClient.isConnected()) {
                 mGoogleApiClient.connect();
             }
         } else {
             buildGoogleApiClient();
-        }*/
+        }
+        if (!getPermissions()) {
+            // Solicita as permissões
+            permissoes = new String[]{
+                    Manifest.permission.ACCESS_COARSE_LOCATION,
+                    Manifest.permission.ACCESS_FINE_LOCATION,
+            };
+            PermissionUtils.validate(this, 0, permissoes);
+        }
 
     }
 
@@ -136,10 +163,23 @@ public class MainActivity extends AppCompatActivity {
      * 21/11/2017
      */
     private void compartilharFoto() {
+        try {
 
-        Intent intent = new Intent(this, PhotoActivity.class);
-        startActivity(intent);
-
+            if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION}, REQUEST_CODE_PERMISSION_ACCESS_COURSE_LOCATION);
+            } else {
+                Location mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+                localizacao = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
+                if (localizacao.latitude == LAT && localizacao.longitude == LNG) {
+                    Intent intent = new Intent(this, PhotoActivity.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(MainActivity.this, "Você não pode compartilhar foto, está fora da localização permitida", Toast.LENGTH_SHORT).show();
+                }
+            }
+        } catch (Exception e) {
+            e.getStackTrace();
+        }
     }
 
     private void deslogarUsuario() {
@@ -148,12 +188,40 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-/*    protected synchronized void buildGoogleApiClient() {
+    protected synchronized void buildGoogleApiClient() {
         //Toast.makeText(this,"buildGoogleApiClient",Toast.LENGTH_SHORT).show();
-        mGoogleApiClient = new GoogleApiClient.Builder(activity)
+        mGoogleApiClient = new GoogleApiClient.Builder(MainActivity.this)
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
                 .addApi(LocationServices.API)
                 .build();
-    }*/
+    }
+
+    //verifica se a permissão já foi concedida, deveria ser um método universal, na classe util, mas, falta-me tempo para refatoração
+    private boolean getPermissions() {
+        if ((ContextCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_COARSE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) || (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.CALL_PHONE)
+                != PackageManager.PERMISSION_GRANTED)) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    @Override
+    public void onConnected(@Nullable Bundle bundle) {
+
+    }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+
+    }
+
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
+    }
 }
