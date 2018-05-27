@@ -16,7 +16,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.location.Geocoder;
 import android.location.Location;
+import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -62,6 +64,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 
 public class MainActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
@@ -76,8 +79,10 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     private double longitude;
     private LatLng localizacao;
     //constantes para a cidade de pacarembi
-    private static double LAT = -22.6078;
-    private static double LNG = -43.7108;
+    private static double LAT = -25.460373;//-22.6078;
+    private static double LNG = -49.280547;//-43.7108;
+    private static String CITY = "Paracambi";//-43.7108;
+    private LocationManager locationManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,6 +122,10 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
             };
             PermissionUtils.validate(this, 0, permissoes);
         }
+
+/*        if (!GPSAtivo()){
+            Toast.makeText(this,"Seu GPS não está ativo, ative-o para compartilhar fotos",Toast.LENGTH_SHORT).show();
+        }*/
 
     }
 
@@ -163,23 +172,36 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
      * 21/11/2017
      */
     private void compartilharFoto() {
+        List<android.location.Address> addresses;
+        Geocoder geocoder = new Geocoder(this, Locale.getDefault());
+
+        //if(!GPSAtivo()) {
         try {
 
             if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                 ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION}, REQUEST_CODE_PERMISSION_ACCESS_COURSE_LOCATION);
             } else {
                 Location mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-                localizacao = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
-                if (localizacao.latitude == LAT && localizacao.longitude == LNG) {
-                    Intent intent = new Intent(this, PhotoActivity.class);
-                    startActivity(intent);
+                if (mLastLocation != null) {
+                    localizacao = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
+                    addresses = geocoder.getFromLocation(localizacao.latitude, localizacao.longitude, 1);
+                    String city = addresses.get(0).getLocality();
+                    if (city.equals(CITY)) {
+                        Intent intent = new Intent(this, PhotoActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Toast.makeText(MainActivity.this, "Você não pode compartilhar foto, está fora da localização permitida", Toast.LENGTH_SHORT).show();
+                    }
                 } else {
-                    Toast.makeText(MainActivity.this, "Você não pode compartilhar foto, está fora da localização permitida", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Nao foi possível busca sua Localização, verifique seu GPS", Toast.LENGTH_SHORT).show();
                 }
             }
         } catch (Exception e) {
             e.getStackTrace();
         }
+        /*}else {
+            Toast.makeText(this,"Seu GPS não está ativo, ative-o para compartilhar fotos",Toast.LENGTH_SHORT).show();
+        }*/
     }
 
     private void deslogarUsuario() {
@@ -223,5 +245,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
+    }
+
+    public boolean GPSAtivo() {
+        return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
     }
 }
