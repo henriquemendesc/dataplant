@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "147254211416",
+    "firebase_url": "https://dataplant-1527436527230.firebaseio.com",
+    "project_id": "dataplant-1527436527230",
+    "storage_bucket": "dataplant-1527436527230.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147254211416:android:496897f7b68def35",
+        "android_client_info": {
+          "package_name": "com.parse.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "147254211416-gj2ag1eap7isuqi7esbp4j59elhs9nrj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.parse.starter",
+            "certificate_hash": "b5c29f78bf43d7e6bcc5159fb9bd078a161b21c7"
+          }
+        },
+        {
+          "client_id": "147254211416-p9q5c7rpcetrtvanujmft5iso4duk5pn.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "147254211416-svmcvt48tibmvkgdsis8q097iq38m6a6.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "147254211416-p9q5c7rpcetrtvanujmft5iso4duk5pn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIO2gd4_kfxx6hY9OFiHZfTqrzj7gjYLM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "147254211416-p9q5c7rpcetrtvanujmft5iso4duk5pn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

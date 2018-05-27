@@ -1,0 +1,4 @@
+#Sun May 27 14:37:08 BRT 2018
+base.0=C\:\\DataPlant\\dataplant\\ParseStarterProject\\build\\intermediates\\transforms\\dexMerger\\debug\\7
+path.0=classes.dex
+renamed.0=classes.dex

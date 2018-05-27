@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:theme="@style/Theme.Transparent"
+    tools:context="com.parse.starter.activity.FloatingActivity">
+
+<!--    <ImageButton
+        android:id="@+id/btnFloat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/ic_highlight_off_white_24dp"
+        android:background="@android:color/transparent"
+        android:text="@string/fechar_floating" />-->
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cardFloat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="5dp"
+        app:background="@color/colorPrimary"
+        card_view:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/image_float"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/galeria" />
+
+        <TextView
+            android:id="@+id/txtFloat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:background="@color/colorTranslucentBlack"
+            android:padding="16dp"
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/colorPrimary"
+            tools:text="Sobre a imagem" />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
