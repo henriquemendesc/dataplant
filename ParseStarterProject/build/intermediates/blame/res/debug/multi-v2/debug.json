@@ -269,6 +269,21 @@
             ]
         },
         {
+            "outputFile": "C:\\DataPlant\\dataplant\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\values-sq-rAL_values-sq-rAL.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Bob\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\73dcf6c36d3602bdc3bb142c50670179\\res\\values-sq-rAL\\values-sq-rAL.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,165,283,400,523,621,708,810,919,1015,1109,1201,1295,1413,1528,1612,1693,1789,1897,1984",
+                        "endColumns": "109,117,116,122,97,86,101,108,95,93,91,93,117,114,83,80,95,107,86,94",
+                        "endOffsets": "160,278,395,518,616,703,805,914,1010,1104,1196,1290,1408,1523,1607,1688,1784,1892,1979,2074"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\DataPlant\\dataplant\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\values-b+sr+Latn_values-b+sr+Latn.arsc.flat",
             "map": [
                 {
@@ -303,21 +318,6 @@
                         "startOffsets": "55,164,272,395,499,605,691,795,913,995,1076,1164,1270,1378,1479,1584,1692,1793,1921,4019,4103",
                         "endColumns": "108,107,122,103,105,85,103,117,81,80,87,105,107,100,104,107,100,127,96,83,100",
                         "endOffsets": "159,267,390,494,600,686,790,908,990,1071,1159,1265,1373,1474,1579,1687,1788,1916,2013,4098,4199"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\DataPlant\\dataplant\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\values-sq-rAL_values-sq-rAL.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Bob\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\73dcf6c36d3602bdc3bb142c50670179\\res\\values-sq-rAL\\values-sq-rAL.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,165,283,400,523,621,708,810,919,1015,1109,1201,1295,1413,1528,1612,1693,1789,1897,1984",
-                        "endColumns": "109,117,116,122,97,86,101,108,95,93,91,93,117,114,83,80,95,107,86,94",
-                        "endOffsets": "160,278,395,518,616,703,805,914,1010,1104,1196,1290,1408,1523,1607,1688,1784,1892,1979,2074"
                     }
                 }
             ]

@@ -4,12 +4,12 @@
         "source": "C:\\Users\\Bob\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\73dcf6c36d3602bdc3bb142c50670179\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_03_dark.png"
     },
     {
-        "merged": "C:\\DataPlant\\dataplant\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4_common_google_signin_btn_icon_dark_disabled.9.png.flat",
-        "source": "C:\\Users\\Bob\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.0.0.aar\\fc37f2c80ee4a52bd09d49fd39b053ce\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png"
-    },
-    {
         "merged": "C:\\DataPlant\\dataplant\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_replay_30_white_36.png.flat",
         "source": "C:\\Users\\Bob\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.2.aar\\430b668db1a72869532684c3dd283209\\res\\drawable-hdpi-v4\\quantum_ic_replay_30_white_36.png"
+    },
+    {
+        "merged": "C:\\DataPlant\\dataplant\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4_common_google_signin_btn_icon_dark_disabled.9.png.flat",
+        "source": "C:\\Users\\Bob\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.0.0.aar\\fc37f2c80ee4a52bd09d49fd39b053ce\\res\\drawable-tvdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png"
     },
     {
         "merged": "C:\\DataPlant\\dataplant\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_search.png.flat",
@@ -44,12 +44,12 @@
         "source": "C:\\Users\\Bob\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.0.2.aar\\430b668db1a72869532684c3dd283209\\res\\drawable-xhdpi-v4\\quantum_ic_refresh_white_24.png"
     },
     {
-        "merged": "C:\\DataPlant\\dataplant\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_collapse_14.png.flat",
-        "source": "C:\\Users\\Bob\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\73dcf6c36d3602bdc3bb142c50670179\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_14.png"
-    },
-    {
         "merged": "C:\\DataPlant\\dataplant\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_common_google_signin_btn_text_disabled.xml.flat",
         "source": "C:\\Users\\Bob\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-auth-11.0.2.aar\\4b546631d67d7861d30d60529abf6de9\\res\\drawable-watch-v20\\common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "C:\\DataPlant\\dataplant\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_collapse_14.png.flat",
+        "source": "C:\\Users\\Bob\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\73dcf6c36d3602bdc3bb142c50670179\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_14.png"
     },
     {
         "merged": "C:\\DataPlant\\dataplant\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_forward_30_grey600_36.png.flat",
