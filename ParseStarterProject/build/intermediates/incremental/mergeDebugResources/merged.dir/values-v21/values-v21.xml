@@ -7,7 +7,7 @@
     <string name="apagar_postagens">Apagar Postagens</string>
     <string name="data_plant">DataPlant</string>
     <string name="delete_post_message">Deseja realmente apagar este post?</string>
-    <string name="delete_post_title">Apagar Postagem</string>
+    <string name="delete_post_title">Apagar ou Editar postagem</string>
     <string name="deleted_item">Item deletado com sucesso!</string>
     <string name="desc_catalogo">Descrição:</string>
     <string name="desc_photo">Descrição</string>

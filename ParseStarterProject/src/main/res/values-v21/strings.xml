@@ -22,7 +22,7 @@
     <string name="empty_search">Sua busca não retornou resultados...</string>
     <string name="apagar_postagens">Apagar Postagens</string>
     <string name="item_click_delete">Clique no item para apagar...</string>
-    <string name="delete_post_title">Apagar Postagem</string>
+    <string name="delete_post_title">Apagar ou Editar postagem</string>
     <string name="delete_post_message">Deseja realmente apagar este post?</string>
     <string name="positive_button">Sim</string>
     <string name="negative_button">Não</string>

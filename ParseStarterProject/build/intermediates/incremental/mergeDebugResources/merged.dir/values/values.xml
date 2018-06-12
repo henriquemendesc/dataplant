@@ -1096,7 +1096,7 @@
     <string name="action_compartilhar">Compartilhar</string>
     <string name="action_configuracoes">Configurações</string>
     <string name="action_sair">Sair</string>
-    <string name="apagar_postagens">Apagar Postagens</string>
+    <string name="apagar_postagens">Apagar ou Editar postagens</string>
     <string name="app_name">DataPlant</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="botao_cadastro">Cadastrar</string>
@@ -1162,8 +1162,8 @@
     <string name="crie_conta">Não tem conta? crie uma!</string>
     <string name="data_plant">DataPlant</string>
     <string name="default_web_client_id" translatable="false">147254211416-p9q5c7rpcetrtvanujmft5iso4duk5pn.apps.googleusercontent.com</string>
-    <string name="delete_post_message">Deseja realmente apagar este post?</string>
-    <string name="delete_post_title">Apagar Postagem</string>
+    <string name="delete_post_message">Você pode editar a <b>descrição</b> ou Apagar o post, o que deseja fazer?</string>
+    <string name="delete_post_title">Editar ou Deletar?</string>
     <string name="deleted_item">Item deletado com sucesso!</string>
     <string name="desc_catalogo">Descrição:</string>
     <string name="desc_photo">Descrição</string>
