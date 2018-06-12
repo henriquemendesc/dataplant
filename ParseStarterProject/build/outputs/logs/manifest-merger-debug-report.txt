@@ -7,12 +7,8 @@ INJECTED from C:\DataPlant\dataplant\ParseStarterProject\src\main\AndroidManifes
 MERGED from [com.android.databinding:adapters:1.3.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\adapters-1.3.1.aar\db3c6beb1e55d391d22f401552221ba1\AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.databinding:library:1.3.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\library-1.3.1.aar\0aa095ef74865d6957aab75b25f6c646\AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.support:design:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\design-26.0.1.aar\b9f88949979cc5b92f5c585673e60caf\AndroidManifest.xml:17:1-31:12
-MERGED from [com.google.android.gms:play-services:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-11.0.2.aar\96b923dcdd5aa07ef1e59c2253e8ad25\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-cast:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.0.2.aar\40db72b117c6f8d6f9dfd3f1d30992a6\AndroidManifest.xml:16:1-19:12
-MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\73dcf6c36d3602bdc3bb142c50670179\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\3817e2fb445c7ebf714a7e92404b55ad\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:transition:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\transition-26.0.1.aar\59014f226d425341e536f4bda6273d35\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-11.0.2.aar\96b923dcdd5aa07ef1e59c2253e8ad25\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-awareness:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.0.2.aar\9c18487bc427f89b5c43410ae8380df0\AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.android.gms:play-services-places:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-places-11.0.2.aar\e82e1748b7959a89e2a892ec7404dec6\AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.android.gms:play-services-wallet:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-wallet-11.0.2.aar\be1cbd6022266be9041c9d82eb43b7c6\AndroidManifest.xml:16:1-20:12
@@ -28,6 +24,8 @@ MERGED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Bob
 MERGED from [com.google.android.gms:play-services-auth-api-phone:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.0.2.aar\44873e5617cc658ed2c333e4799fc225\AndroidManifest.xml:2:1-4:12
 MERGED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.2.aar\4b546631d67d7861d30d60529abf6de9\AndroidManifest.xml:16:1-26:12
 MERGED from [com.google.android.gms:play-services-auth-base:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.0.2.aar\fd528fd8f15dac908acb3ac4f333d6c3\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-cast:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.0.2.aar\40db72b117c6f8d6f9dfd3f1d30992a6\AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.android.gms:play-services-clearcut:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-11.0.2.aar\b821bfb558d5aae0d10d563026b5aa88\AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.firebase:firebase-config:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\firebase-config-11.0.2.aar\2fccaed93ab34ee3c9a317dab75a8c21\AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.android.gms:play-services-games:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-games-11.0.2.aar\17599992bca351a7fff7b29f0c31afb9\AndroidManifest.xml:16:1-19:12
@@ -63,10 +61,13 @@ MERGED from [com.google.firebase:firebase-common:11.0.2] C:\Users\Bob\.gradle\ca
 MERGED from [com.google.android.gms:play-services-gass:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.0.2.aar\b86ffc707d826cfe3b2cfa168a14e3ea\AndroidManifest.xml:2:1-5:12
 MERGED from [com.google.android.gms:play-services-tasks:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.2.aar\193ca8aed17cd3be048a9f758722798c\AndroidManifest.xml:2:1-5:12
 MERGED from [com.google.android.gms:play-services-basement:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.2.aar\0a1a47d1a315d6acf2fe3a35e64e09d9\AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\73dcf6c36d3602bdc3bb142c50670179\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\3817e2fb445c7ebf714a7e92404b55ad\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.1.aar\b987ecc1cc4013d6475cdabd23aedbfe\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:cardview-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.1.aar\378db4d9ec72b7af22db970785e60854\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\203b15ad59483ab861420e65435706cb\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.maps.android:android-maps-utils:0.4] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.4.aar\e08170ff39c7d4465728bb99ad65ff34\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\9e8860c470490d5b55ab2244c43e21da\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.1.aar\c09c4106d9165d798327d0470a1a4765\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-fragment:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.1.aar\f0a7a028cca6655709d474a8dce44761\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:animated-vector-drawable:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.1.aar\020435c932379873fc3fbfeddc88e136\AndroidManifest.xml:17:1-28:12
@@ -165,18 +166,10 @@ application
 ADDED from C:\DataPlant\dataplant\ParseStarterProject\src\main\AndroidManifest.xml:24:5-68:19
 MERGED from [com.android.support:design:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\design-26.0.1.aar\b9f88949979cc5b92f5c585673e60caf\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\design-26.0.1.aar\b9f88949979cc5b92f5c585673e60caf\AndroidManifest.xml:25:5-29:19
-MERGED from [com.google.android.gms:play-services:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-11.0.2.aar\96b923dcdd5aa07ef1e59c2253e8ad25\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-11.0.2.aar\96b923dcdd5aa07ef1e59c2253e8ad25\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:4:5-8:19
-MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:4:5-8:19
-MERGED from [com.google.android.gms:play-services-cast:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.0.2.aar\40db72b117c6f8d6f9dfd3f1d30992a6\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-cast:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.0.2.aar\40db72b117c6f8d6f9dfd3f1d30992a6\AndroidManifest.xml:18:5-19
-MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\73dcf6c36d3602bdc3bb142c50670179\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\73dcf6c36d3602bdc3bb142c50670179\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\3817e2fb445c7ebf714a7e92404b55ad\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\3817e2fb445c7ebf714a7e92404b55ad\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:transition:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\transition-26.0.1.aar\59014f226d425341e536f4bda6273d35\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:transition:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\transition-26.0.1.aar\59014f226d425341e536f4bda6273d35\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-11.0.2.aar\96b923dcdd5aa07ef1e59c2253e8ad25\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-11.0.2.aar\96b923dcdd5aa07ef1e59c2253e8ad25\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-awareness:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.0.2.aar\9c18487bc427f89b5c43410ae8380df0\AndroidManifest.xml:18:5-19
 MERGED from [com.google.android.gms:play-services-awareness:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.0.2.aar\9c18487bc427f89b5c43410ae8380df0\AndroidManifest.xml:18:5-19
 MERGED from [com.google.android.gms:play-services-places:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-places-11.0.2.aar\e82e1748b7959a89e2a892ec7404dec6\AndroidManifest.xml:18:5-19
@@ -197,6 +190,10 @@ MERGED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Bob
 MERGED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.0.2.aar\1efa0b044afda860eb9a899f3ec6163c\AndroidManifest.xml:19:5-26:19
 MERGED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.2.aar\4b546631d67d7861d30d60529abf6de9\AndroidManifest.xml:19:5-25:19
 MERGED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.2.aar\4b546631d67d7861d30d60529abf6de9\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.0.2.aar\40db72b117c6f8d6f9dfd3f1d30992a6\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-cast:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.0.2.aar\40db72b117c6f8d6f9dfd3f1d30992a6\AndroidManifest.xml:18:5-19
 MERGED from [com.google.android.gms:play-services-clearcut:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-11.0.2.aar\b821bfb558d5aae0d10d563026b5aa88\AndroidManifest.xml:18:5-19
 MERGED from [com.google.android.gms:play-services-clearcut:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-11.0.2.aar\b821bfb558d5aae0d10d563026b5aa88\AndroidManifest.xml:18:5-19
 MERGED from [com.google.firebase:firebase-config:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\firebase-config-11.0.2.aar\2fccaed93ab34ee3c9a317dab75a8c21\AndroidManifest.xml:18:5-19
@@ -257,6 +254,10 @@ MERGED from [com.google.android.gms:play-services-tasks:11.0.2] C:\Users\Bob\.gr
 MERGED from [com.google.android.gms:play-services-tasks:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.2.aar\193ca8aed17cd3be048a9f758722798c\AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.2.aar\0a1a47d1a315d6acf2fe3a35e64e09d9\AndroidManifest.xml:19:5-21:19
 MERGED from [com.google.android.gms:play-services-basement:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.2.aar\0a1a47d1a315d6acf2fe3a35e64e09d9\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\73dcf6c36d3602bdc3bb142c50670179\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\73dcf6c36d3602bdc3bb142c50670179\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\3817e2fb445c7ebf714a7e92404b55ad\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\3817e2fb445c7ebf714a7e92404b55ad\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.1.aar\b987ecc1cc4013d6475cdabd23aedbfe\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.1.aar\b987ecc1cc4013d6475cdabd23aedbfe\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:cardview-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.1.aar\378db4d9ec72b7af22db970785e60854\AndroidManifest.xml:22:5-26:19
@@ -377,18 +378,10 @@ MERGED from [com.android.databinding:library:1.3.1] C:\Users\Bob\.gradle\caches\
 MERGED from [com.android.databinding:library:1.3.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\library-1.3.1.aar\0aa095ef74865d6957aab75b25f6c646\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:design:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\design-26.0.1.aar\b9f88949979cc5b92f5c585673e60caf\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:design:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\design-26.0.1.aar\b9f88949979cc5b92f5c585673e60caf\AndroidManifest.xml:21:5-23:62
-MERGED from [com.google.android.gms:play-services:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-11.0.2.aar\96b923dcdd5aa07ef1e59c2253e8ad25\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-11.0.2.aar\96b923dcdd5aa07ef1e59c2253e8ad25\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-cast:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.0.2.aar\40db72b117c6f8d6f9dfd3f1d30992a6\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-cast:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.0.2.aar\40db72b117c6f8d6f9dfd3f1d30992a6\AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\73dcf6c36d3602bdc3bb142c50670179\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\73dcf6c36d3602bdc3bb142c50670179\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\3817e2fb445c7ebf714a7e92404b55ad\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\3817e2fb445c7ebf714a7e92404b55ad\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:transition:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\transition-26.0.1.aar\59014f226d425341e536f4bda6273d35\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\transition-26.0.1.aar\59014f226d425341e536f4bda6273d35\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-11.0.2.aar\96b923dcdd5aa07ef1e59c2253e8ad25\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-11.0.2.aar\96b923dcdd5aa07ef1e59c2253e8ad25\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-awareness:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.0.2.aar\9c18487bc427f89b5c43410ae8380df0\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-awareness:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.0.2.aar\9c18487bc427f89b5c43410ae8380df0\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-places:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-places-11.0.2.aar\e82e1748b7959a89e2a892ec7404dec6\AndroidManifest.xml:17:5-43
@@ -419,6 +412,10 @@ MERGED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Bob\.gra
 MERGED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.2.aar\4b546631d67d7861d30d60529abf6de9\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-auth-base:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.0.2.aar\fd528fd8f15dac908acb3ac4f333d6c3\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-auth-base:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.0.2.aar\fd528fd8f15dac908acb3ac4f333d6c3\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-cast:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.0.2.aar\40db72b117c6f8d6f9dfd3f1d30992a6\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-cast:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.0.2.aar\40db72b117c6f8d6f9dfd3f1d30992a6\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-clearcut:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-11.0.2.aar\b821bfb558d5aae0d10d563026b5aa88\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-clearcut:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-11.0.2.aar\b821bfb558d5aae0d10d563026b5aa88\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-config:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\firebase-config-11.0.2.aar\2fccaed93ab34ee3c9a317dab75a8c21\AndroidManifest.xml:17:5-43
@@ -489,6 +486,10 @@ MERGED from [com.google.android.gms:play-services-tasks:11.0.2] C:\Users\Bob\.gr
 MERGED from [com.google.android.gms:play-services-tasks:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.2.aar\193ca8aed17cd3be048a9f758722798c\AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-basement:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.2.aar\0a1a47d1a315d6acf2fe3a35e64e09d9\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-basement:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.2.aar\0a1a47d1a315d6acf2fe3a35e64e09d9\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\73dcf6c36d3602bdc3bb142c50670179\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\73dcf6c36d3602bdc3bb142c50670179\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\3817e2fb445c7ebf714a7e92404b55ad\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\3817e2fb445c7ebf714a7e92404b55ad\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.1.aar\b987ecc1cc4013d6475cdabd23aedbfe\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.1.aar\b987ecc1cc4013d6475cdabd23aedbfe\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:cardview-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.1.aar\378db4d9ec72b7af22db970785e60854\AndroidManifest.xml:20:5-44
@@ -497,6 +498,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Bo
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\203b15ad59483ab861420e65435706cb\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.maps.android:android-maps-utils:0.4] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.4.aar\e08170ff39c7d4465728bb99ad65ff34\AndroidManifest.xml:5:5-43
 MERGED from [com.google.maps.android:android-maps-utils:0.4] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\android-maps-utils-0.4.aar\e08170ff39c7d4465728bb99ad65ff34\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\9e8860c470490d5b55ab2244c43e21da\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\9e8860c470490d5b55ab2244c43e21da\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.1.aar\c09c4106d9165d798327d0470a1a4765\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.1.aar\c09c4106d9165d798327d0470a1a4765\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.1.aar\f0a7a028cca6655709d474a8dce44761\AndroidManifest.xml:21:5-23:60
@@ -529,10 +532,10 @@ INJECTED from C:\DataPlant\dataplant\ParseStarterProject\src\main\AndroidManifes
 		INJECTED from C:\DataPlant\dataplant\ParseStarterProject\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\design-26.0.1.aar\b9f88949979cc5b92f5c585673e60caf\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\3817e2fb445c7ebf714a7e92404b55ad\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\3817e2fb445c7ebf714a7e92404b55ad\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:transition:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\transition-26.0.1.aar\59014f226d425341e536f4bda6273d35\AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:transition:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\transition-26.0.1.aar\59014f226d425341e536f4bda6273d35\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\3817e2fb445c7ebf714a7e92404b55ad\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.1.aar\3817e2fb445c7ebf714a7e92404b55ad\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.1.aar\b987ecc1cc4013d6475cdabd23aedbfe\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-v4:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.1.aar\b987ecc1cc4013d6475cdabd23aedbfe\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:cardview-v7:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.1.aar\378db4d9ec72b7af22db970785e60854\AndroidManifest.xml:23:9-25:38
@@ -557,18 +560,6 @@ MERGED from [com.android.support:support-compat:26.0.1] C:\Users\Bob\.gradle\cac
 		ADDED from [com.android.support:design:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\design-26.0.1.aar\b9f88949979cc5b92f5c585673e60caf\AndroidManifest.xml:28:13-35
 	android:name
 		ADDED from [com.android.support:design:26.0.1] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\design-26.0.1.aar\b9f88949979cc5b92f5c585673e60caf\AndroidManifest.xml:27:13-51
-receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
-ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:5:9-99
-	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:5:19-97
-service#com.google.android.gms.cast.framework.media.MediaNotificationService
-ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:6:9-103
-	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:6:18-101
-service#com.google.android.gms.cast.framework.ReconnectionService
-ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:7:9-92
-	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:7:18-90
 uses-feature#0x00020000
 ADDED from [com.google.android.gms:play-services-maps:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.0.2.aar\676adbf37e4a3096b26a4b4a9b7a6223\AndroidManifest.xml:21:5-77
 	android:glEsVersion
@@ -631,6 +622,18 @@ ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Bob\.grad
 		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.2.aar\4b546631d67d7861d30d60529abf6de9\AndroidManifest.xml:24:88-182
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.0.2.aar\4b546631d67d7861d30d60529abf6de9\AndroidManifest.xml:24:18-63
+receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
+ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:5:9-99
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:5:19-97
+service#com.google.android.gms.cast.framework.media.MediaNotificationService
+ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:6:9-103
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:6:18-101
+service#com.google.android.gms.cast.framework.ReconnectionService
+ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:7:9-92
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.0.2.aar\430b668db1a72869532684c3dd283209\AndroidManifest.xml:7:18-90
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:11.0.2] C:\Users\Bob\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.2.aar\e1cfa00eb27be67c0e043cfa9e69c61e\AndroidManifest.xml:19:9-172
 	android:exported
