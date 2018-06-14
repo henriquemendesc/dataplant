@@ -109,11 +109,11 @@ public class CatalogFragment extends Fragment {
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                if(SaveSharedPreferences.getUserAdmin(getActivity())) {
+                if (SaveSharedPreferences.getUserAdmin(getActivity())) {
                     ParseObject obj = adapter.getItem(position);
                     editOrDeleteItem(obj.getObjectId(), position);
                     return true;
-                }else {
+                } else {
                     return false;
                 }
             }
@@ -126,7 +126,9 @@ public class CatalogFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        Toast.makeText(getContext(), "Clique longo para apagar ou editar o item", Toast.LENGTH_SHORT).show();
+        if (SaveSharedPreferences.getUserAdmin(getActivity())) {
+            Toast.makeText(getContext(), "Clique longo para apagar ou editar o item", Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void editOrDeleteItem(final String objectId, int position) {
@@ -349,12 +351,12 @@ public class CatalogFragment extends Fragment {
             query.findInBackground(new FindCallback<ParseObject>() {
                 @Override
                 public void done(List<ParseObject> objects, ParseException e) {
-                    if (e == null){
-                        objects.get(0).put("imageabout",s);
+                    if (e == null) {
+                        objects.get(0).put("imageabout", s);
                         objects.get(0).saveInBackground();
                         Toast.makeText(getActivity(), "Post foi editado com sucesso", Toast.LENGTH_SHORT).show();
                         getCatalogo();
-                    }else{
+                    } else {
                         Toast.makeText(getActivity(), "Houve algum erro", Toast.LENGTH_SHORT).show();
                     }
                 }
