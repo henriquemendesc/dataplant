@@ -40,6 +40,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
@@ -93,10 +94,20 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     private static double LAT = -25.460373;//-22.6078;
     private static double LNG = -49.280547;//-43.7108;
     //Variável para a cidade a ser validada.
-    private static String CITY = "Belo Horizonte";//private static String CITY = "Paracambi";
+    private static String CITY = "Paracambi";//private static String CITY = "Belo horizonte";
     private LocationManager locationManager;
     private Location mLastLocation;
     private LocationRequest mLocationRequest;
+    private FusedLocationProviderClient mFusedLocationClient;
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        buildGoogleApiClient();
+        if (mGoogleApiClient != null) {
+            mGoogleApiClient.connect();
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -123,6 +134,11 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         /**
          * Começa a verificar a API do google para localização
          */
+        //este método verifica se a versão do android é menor ou igual a 7.1
+        //se for menor, a forma de obter a localização, é diferente.
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.N_MR1) {
+            getLocationObsolete();
+        }
         //método para conexão com a API Google
         buildGoogleApiClient();
         if (mGoogleApiClient != null) {
@@ -205,7 +221,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
                 ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION}, REQUEST_CODE_PERMISSION_ACCESS_COURSE_LOCATION);
             } else {
                 //se há permissão, cria a variável com as coordenadas
-                if (mLastLocation == null)
+                if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.N_MR1 && mLastLocation == null) {
+                    getLocationObsolete();
+                } else if (mLastLocation == null)
                     mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
 
 
@@ -262,14 +280,14 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     @Override
     public void onConnected(@Nullable Bundle bundle) {
 
-        LocationServices.getFusedLocationProviderClient(this).getLastLocation().addOnSuccessListener(new OnSuccessListener<Location>() {
-            @Override
-            public void onSuccess(Location location) {
-                mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-            }
-        });
+//        LocationServices.getFusedLocationProviderClient(this).getLastLocation().addOnSuccessListener(new OnSuccessListener<Location>() {
+        //          @Override
+        //        public void onSuccess(Location location) {
+        //          mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+        //      }
+        // });
 
-        mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+        //mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
 
     }
 
@@ -287,5 +305,14 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
     }
 
+    private void getLocationObsolete() {
+        mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+        mFusedLocationClient.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+                mLastLocation = location;
+            }
+        });
+    }
 
 }

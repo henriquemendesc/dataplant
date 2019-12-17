@@ -8,7 +8,7 @@ android {
     }
     defaultConfig {
         applicationId "com.parse.starter"
-        minSdkVersion 19
+        minSdkVersion 25
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
