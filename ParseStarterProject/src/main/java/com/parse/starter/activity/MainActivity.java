@@ -40,8 +40,12 @@ import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.parse.FindCallback;
 import com.parse.GetCallback;
 import com.parse.LogInCallback;
@@ -69,6 +73,13 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
+    /**
+     * A localização depende de uma API do Google, a PLACES e do GPS, este último, deve ser dada a permissão para o funcionamento da API de localização
+     * O App tem uma variável estática ''CITY'' que recebe o nome da cidade a ser validada e, após fazer toda a conexão e puxar a localização do dispositivo, fica apto a validar se está no local indicado ou não.
+     * A validação é feita no click da do ícone de foto, no menu da tela principal.
+     * Os locais onde isto é usado, estão comentados.
+     */
+
     private static final int REQUEST_CODE_PERMISSION_ACCESS_COURSE_LOCATION = 1;
     private Toolbar toolbarPrincipal;
     private SlidingTabLayout slidingTabLayout;
@@ -81,8 +92,11 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     //constantes para a cidade de pacarembi
     private static double LAT = -25.460373;//-22.6078;
     private static double LNG = -49.280547;//-43.7108;
-    private static String CITY = "Paracambi";//-43.7108;
+    //Variável para a cidade a ser validada.
+    private static String CITY = "Belo Horizonte";//private static String CITY = "Paracambi";
     private LocationManager locationManager;
+    private Location mLastLocation;
+    private LocationRequest mLocationRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,7 +123,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         /**
          * Começa a verificar a API do google para localização
          */
-
         //método para conexão com a API Google
         buildGoogleApiClient();
         if (mGoogleApiClient != null) {
@@ -192,12 +205,15 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
                 ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION}, REQUEST_CODE_PERMISSION_ACCESS_COURSE_LOCATION);
             } else {
                 //se há permissão, cria a variável com as coordenadas
-                Location mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+                if (mLastLocation == null)
+                    mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+
+
                 if (mLastLocation != null) { //verifica se é nulo, a localização
                     localizacao = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
                     addresses = geocoder.getFromLocation(localizacao.latitude, localizacao.longitude, 1);
-                    String city = addresses.get(0).getLocality(); //pega a cidade
-                    if (city.equals(CITY)) {//verifica se a cidade é a permitida, se sim, abre a tela de fotos.
+                    String city = addresses.get(0).getSubAdminArea(); //pega a cidade
+                    if (city != null && city.equals(CITY)) {//verifica se a cidade é a permitida, se sim, abre a tela de fotos.
                         Intent intent = new Intent(this, PhotoActivity.class);
                         startActivity(intent);
                     } else {
@@ -246,6 +262,15 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     @Override
     public void onConnected(@Nullable Bundle bundle) {
 
+        LocationServices.getFusedLocationProviderClient(this).getLastLocation().addOnSuccessListener(new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+                mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+            }
+        });
+
+        mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+
     }
 
     @Override
@@ -261,4 +286,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     public boolean GPSAtivo() {
         return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
     }
+
+
 }

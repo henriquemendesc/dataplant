@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Dec 16 19:57:10 BRST 2019
+#Tue Dec 17 11:47:44 BRST 2019
 1.base=C\:\\dataplant\\dataplant\\ParseStarterProject\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 2.path=classes.dex
 0.baseType=DIRECTORY
