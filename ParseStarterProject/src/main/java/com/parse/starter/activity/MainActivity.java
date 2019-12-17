@@ -106,6 +106,11 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         slidingTabLayout.setSelectedIndicatorColors(ContextCompat.getColor(this, R.color.cinzaEscuro));
         slidingTabLayout.setViewPager(viewPager);
 
+        /**
+         * Começa a verificar a API do google para localização
+         */
+
+        //método para conexão com a API Google
         buildGoogleApiClient();
         if (mGoogleApiClient != null) {
             if (!mGoogleApiClient.isConnected()) {
@@ -114,6 +119,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         } else {
             buildGoogleApiClient();
         }
+
+        //permissões
         if (!getPermissions()) {
             // Solicita as permissões
             permissoes = new String[]{
@@ -129,7 +136,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
 
     }
 
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -175,18 +182,22 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         List<android.location.Address> addresses;
         Geocoder geocoder = new Geocoder(this, Locale.getDefault());
 
-        //if(!GPSAtivo()) {
+        /**
+         * O compartilhamento de foto só é permitido dentro da localização especificada
+         * private static String CITY = "Paracambi"
+         */
         try {
-
+            //Verifica se há permissão de localização
             if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                 ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION}, REQUEST_CODE_PERMISSION_ACCESS_COURSE_LOCATION);
             } else {
+                //se há permissão, cria a variável com as coordenadas
                 Location mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-                if (mLastLocation != null) {
+                if (mLastLocation != null) { //verifica se é nulo, a localização
                     localizacao = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
                     addresses = geocoder.getFromLocation(localizacao.latitude, localizacao.longitude, 1);
-                    String city = addresses.get(0).getLocality();
-                    if (city.equals(CITY)) {
+                    String city = addresses.get(0).getLocality(); //pega a cidade
+                    if (city.equals(CITY)) {//verifica se a cidade é a permitida, se sim, abre a tela de fotos.
                         Intent intent = new Intent(this, PhotoActivity.class);
                         startActivity(intent);
                     } else {

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\DataPlant\\dataplant\\ParseStarterProject\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
+            "outputFile": "C:\\dataplant\\dataplant\\ParseStarterProject\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Bob\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-auth-11.0.2.aar\\4b546631d67d7861d30d60529abf6de9\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\Henrique Mendes\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-auth-11.0.2.aar\\2ab3fb33142dc226ec9423b201861622\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",

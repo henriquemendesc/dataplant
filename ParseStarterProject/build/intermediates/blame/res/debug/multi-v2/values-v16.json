@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\DataPlant\\dataplant\\ParseStarterProject\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "C:\\dataplant\\dataplant\\ParseStarterProject\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Bob\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.1.aar\\507b63080305395978e16459c828320e\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Henrique Mendes\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.1.aar\\6714dfe0c7fb390daa3132d9aac04f12\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Bob\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\3817e2fb445c7ebf714a7e92404b55ad\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Henrique Mendes\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\5f45bcd99de04e3097f7f5b605c536ba\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

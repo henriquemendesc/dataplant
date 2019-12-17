@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\DataPlant\\dataplant\\ParseStarterProject\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rCA\\values-en-rCA.xml",
+            "outputFile": "C:\\dataplant\\dataplant\\ParseStarterProject\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rCA\\values-en-rCA.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Bob\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-11.0.2.aar\\be1cbd6022266be9041c9d82eb43b7c6\\res\\values-en-rCA\\values.xml",
+                    "source": "C:\\Users\\Henrique Mendes\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-11.0.2.aar\\8c4d63a0e81f0faf41efcbc15274e365\\res\\values-en-rCA\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
